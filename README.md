@@ -3,7 +3,7 @@
 <h1> Q1 - Birthdays </h1>
 
 <p>
-Analyzing the dispersion of ages we can see that the ages represent a bell curve with a long tail to the left. This tells us about the general demographic profile of customers. The clientelle of the company were born mostly between the 50's - 70's and as customers get older than this gereal age the clientelle gets vastly smaller per year older. This would tell us something about the usefulness or nature of the product by a general demopgrapic of customers.
+Analyzing the dispersion of ages we can see that the ages represent a bell curve with a long tail to the right. This tells us about the general demographic profile of customers. The clientelle of the company. Are mostly between the ages of 45 and 70. We can definatly see that the product is not popular with clients under the age of 30 but very relevant for older clients and only starts tailing off after around retirement age. Perhaps we could infer the company sells mortgages bonds or life insurance.
 </P>
 
 ![alt text](Screenshots/Q1.PNG "Q2")
