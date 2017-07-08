@@ -20,7 +20,7 @@ Analyzing the dispersion of ages we can see that the ages represent a bell curve
 
     Not yet completed
 
-<h1> Advanced - Problem Solving</h1>
+<h1> Advanced - Coin Flipping</h1>
 
 <p>Craete a SP that uses The Recursive CTE design pattern to find the Highest Number of consecutive flips for a chosen coin side then used a cursor (not ideal) tpo iterate through each of the players for simplicity.</p>
 
