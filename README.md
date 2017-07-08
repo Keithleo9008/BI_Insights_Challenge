@@ -22,7 +22,7 @@ Analyzing the dispersion of ages we can see that the ages represent a bell curve
 
 <h1> Advanced - Coin Flipping</h1>
 
-<p>I Created a StoreProc that uses The Recursive CTE design pattern to find the Highest Number of consecutive flips for a chosen coin side (heads) then used a cursor (not ideal) to iterate through each of the players for simplicity.The Code for all the sql artfecats have been uploaded above</p>
+<p>I Created a StoreProc that uses The Recursive CTE design pattern to find the Highest Number of consecutive flips for a chosen coin side (heads) then used a cursor (not ideal) to iterate through each of the players for simplicity.The Code for all the sql artefacts have been uploaded above</p>
 
 ![alt text](Screenshots/CoinFlipping.PNG "Q3")
 
