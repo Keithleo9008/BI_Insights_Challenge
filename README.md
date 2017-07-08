@@ -22,13 +22,13 @@ Analyzing the dispersion of ages we can see that the ages represent a bell curve
 
 <h1> Advanced - Coin Flipping</h1>
 
-<p>Craete a SP that uses The Recursive CTE design pattern to find the Highest Number of consecutive flips for a chosen coin side then used a cursor (not ideal) tpo iterate through each of the players for simplicity.</p>
+<p>I Created a StoreProc that uses The Recursive CTE design pattern to find the Highest Number of consecutive flips for a chosen coin side (heads) then used a cursor (not ideal) to iterate through each of the players for simplicity.The Code for all the sql artfecats have been uploaded above</p>
 
 ![alt text](Screenshots/CoinFlipping.PNG "Q3")
 
 <h1> Advanced - Prime Proportions </h1>
     
-<p>choose the number of squares ti create (Max 10 for simplicity) Click the "Generate table" button and watch the squares being generated and the prime numbers highlighted in red, the VBA code has been saved in a separate file in the repository the only part not completed was the summary table</p>
+<p>choose the number of squares to create (Max 10 for simplicity) Click the "Generate table" button and watch the squares being generated and the prime numbers highlighted in red, the VBA code has been saved in a separate file in the repository the only part not completed was the summary table. The actual working excel file is in the zip folder, to use please make sure macros are enabled.</p>
 
 ![alt text](Screenshots/PrimeProportions1.PNG "PP1")
 
