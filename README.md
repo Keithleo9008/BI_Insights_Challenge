@@ -27,5 +27,8 @@ Analyzing the dispersion of ages we can see that the ages represent a bell curve
 ![alt text](Screenshots/CoinFlipping.PNG "Q3")
 
 <h1> Advanced - Prime Proportions </h1>
+    
+<p>choose the number of squares ti create (Max 10 for simplicity) Click the "Generate table" button and watch the squares being generated and the prime numbers highlighted in red, the VBA code has been saved in a separate file in the repository the only part not completed was the summary table</p>
 
-    Not yet completed
+![alt text](Screenshots/PrimeProportions1.PNG "PP1")
+
