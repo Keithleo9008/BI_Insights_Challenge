@@ -1,0 +1,115 @@
+Public rng As Range
+Public counter As Integer
+Public size As Integer
+Public choice As Integer
+Public primes As Integer
+
+Private Sub generate_table()
+    
+    ActiveSheet.Range("rng_cube").ClearContents
+    choice = Range("B2").Cells(1, 1).Value
+    Set rng = ActiveSheet.Range("rng_start")
+    rng.Select
+    counter = 1
+    size = 1
+    primes = -1
+    
+    printNumber (counter)
+    counter = counter + 1
+    rng.Offset(, size).Select
+    
+    'Make each cube
+    For i = 1 To choice - 1 Step 1
+       'Make each side of the square
+       Call move(size)
+       ActiveCell.Offset(0, 1).Select
+       size = size + 2
+    Next i
+
+End Sub
+
+Private Sub move(size As Integer)
+        
+    'Side 1
+        For i = 1 To size + 1 Step 1
+             printNumber (counter)
+            If i <> size + 1 Then
+                ActiveCell.Offset(-1, 0).Select
+            End If
+            counter = counter + 1
+        Next i
+        
+        ActiveCell.Offset(0, -1).Select
+        
+    'Side 2
+        For i = 1 To size + 1 Step 1
+             printNumber (counter)
+            If i <> size + 1 Then
+                ActiveCell.Offset(0, -1).Select
+            End If
+            counter = counter + 1
+        Next i
+        
+        ActiveCell.Offset(1, 0).Select
+        
+    'Side 3
+        For i = 1 To size + 1 Step 1
+             printNumber (counter)
+            If i <> size + 1 Then
+                ActiveCell.Offset(1, 0).Select
+            End If
+            counter = counter + 1
+        Next i
+        
+        ActiveCell.Offset(0, 1).Select
+        
+    'Side 4
+        For i = 1 To size + 1 Step 1
+            printNumber (counter)
+            If i <> size + 1 Then
+                ActiveCell.Offset(0, 1).Select
+            End If
+            counter = counter + 1
+        Next i
+           
+End Sub
+
+Private Sub color()
+    
+End Sub
+
+Private Sub printNumber(val As Integer)
+    ActiveCell.Value = val
+    If PrimeNumberCheck(val) = True Then
+         ActiveCell.Font.color = RGB(255, 0, 0)
+         primes = primes + 1
+         Else
+         ActiveCell.Font.color = RGB(0, 0, 0)
+     End If
+End Sub
+
+Public Function PrimeNumberCheck(ByVal lNumber As Integer) As Boolean
+ 
+   Dim i As Long
+   PrimeNumberCheck = False
+ 
+    If (lNumber = 2) Or (lNumber = 3) Then
+        PrimeNumberCheck = True
+        Exit Function
+    End If
+    
+    If (lNumber < 1) Or (lNumber <> CLng(lNumber)) Then
+        PrimeNumberCheck = False
+        Exit Function
+    End If
+    
+    For i = 2 To CLng(Sqr(lNumber)) Step 1
+        If lNumber Mod i = 0 Then
+            PrimeNumberCheck = False
+            Exit Function
+        End If
+    Next i
+    
+    PrimeNumberCheck = True
+    
+End Function
