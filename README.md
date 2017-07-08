@@ -18,7 +18,7 @@ Analyzing the dispersion of ages we can see that the ages represent a bell curve
 
 <h1> Q4 - Problem Solving </h1>
 
-    <p></p>
+    Not yet completed
 
 <h1> Advanced - Problem Solving</h1>
 
